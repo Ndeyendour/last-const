@@ -320,7 +320,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a class="skip-link screen-reader-text" href="#content" role="link" title="Skip to content">
 </a>
 <div class="hfeed site" id="page">
-<header class="site-header ast-primary-submenu-animation-fade header-main-layout-1 ast-primary-menu-enabled ast-builder-menu-toggle-icon ast-mobile-header-inline" id="masthead" itemtype="https://schema.org/WPHeader" itemscope="itemscope" itemid="#masthead">
+<header class="site-header ast-primary-submenu-animation-fade header-main-layout-1 ast-primary-menu-enabled ast-builder-menu-toggle-icon ast-mobile-header-inline " id="masthead" itemtype="https://schema.org/WPHeader" itemscope="itemscope" itemid="#masthead">
 <div id="ast-desktop-header" data-toggle-type="dropdown">
 <div class="ast-main-header-wrap main-header-bar-wrap ">
 <div class="ast-primary-header-bar ast-primary-header main-header-bar site-header-focus-item" data-section="section-primary-header-builder">
@@ -343,24 +343,77 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optionnel : ajoute une ombre légère pour un effet de profondeur */
 }
 
-  
+.main-header-menu {
+    display: flex; /* Pour une disposition en ligne des éléments de menu */
+    list-style: none; /* Supprime les puces */
+    padding: 0; /* Supprime le padding */
+    margin: 0; /* Supprime la marge */
+}
+
+.main-header-menu li {
+    margin: 0 10px; /* Espacement entre les éléments de menu */
+}
+
+.main-header-menu a {
+    text-decoration: none; /* Supprime la décoration par défaut des liens */
+    color: #000; /* Couleur du texte */
+}
+@media (max-width: 768px) {
+    .main-header-menu {
+        flex-direction: column; /* Disposition en colonne pour les petits écrans */
+    }
+
+    .main-header-menu li {
+        margin: 10px 0; /* Espacement vertical pour les petits écrans */
+    }
+}
+.site-header-primary-section-right {
+  position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000; /* Assurez-vous que la navigation est au-dessus des autres éléments */
+   /* Facultatif : ajoutez une couleur de fond si nécessaire pour éviter les problèmes de transparence */
+    padding: 10px; /* Ajustez le padding selon vos besoins */
+    width: 100%;
+}
+.ast-builder-layout-element ast-flex site-header-focus-item {
+    background-color: rgba(255, 255, 255, 0.5); /* Blanc avec 50% de transparence */
+   
+}
+
+
+
 </style>
 
-<div class="ast-builder-layout-element ast-flex site-header-focus-item" data-section="title_tagline">
-<div class="site-branding ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope">
+<div class="ast-builder-layout-element ast-flex site-header-focus-item">
+
+<div class="site-branding ast-site-identity">
 <span class="site-logo-img"><a href="index.html" class="custom-logo-link transparent-custom-logo" rel="home" itemprop="url" aria-label="Cbb "><img  src="file:///C:/Users/USER/Desktop/const--main/wp-content/uploads/sites/285/2020/08/logo.png" class="custom-logo" alt decoding="async" /></a></span> </div>
 
 </div>
 </div>
 <div class="site-header-primary-section-right site-header-section ast-flex ast-grid-right-section">
 <div class="ast-builder-menu-1 ast-builder-menu ast-flex ast-builder-menu-1-focus-item ast-builder-layout-element site-header-focus-item" data-section="section-hb-menu-1">
-<div class="ast-main-header-bar-alignment"><div class="main-header-bar-navigation"><nav class="site-navigation ast-flex-grow-1 navigation-accessibility site-header-focus-item" id="primary-site-navigation-desktop" aria-label="Site Navigation: Primary Menu" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope"><div class="main-navigation ast-inline-flex"><ul id="ast-hf-menu-1" class="main-header-menu ast-menu-shadow ast-nav-menu ast-flex  submenu-with-border astra-menu-animation-fade  stack-on-mobile"><li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item menu-item-22"><a href="index.html" aria-current="page" class="menu-link">Accueil</a></li>
+  
+<div class="ast-main-header-bar-alignment">
+  
+  <div class="main-header-bar-navigation">
+  
+  <nav class="site-navigation ast-flex-grow-1 navigation-accessibility site-header-focus-item" id="primary-site-navigation-desktop" aria-label="Site Navigation: Primary Menu" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope">
+    <div class="main-navigation ast-inline-flex">
+      <ul id="ast-hf-menu-1" class="main-header-menu ast-menu-shadow ast-nav-menu ast-flex  submenu-with-border astra-menu-animation-fade  stack-on-mobile">
+        <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item menu-item-22">
+          <a href="index.html" aria-current="page" class="menu-link">Accueil</a></li>
 
-<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="about/index.html" class="menu-link">A propos</a></li>
+  <li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="about/index.html" class="menu-link">A propos</a></li>
 <li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="testimonials/index.html" class="menu-link">Services</a></li>
 <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="portfolio/index.html" class="menu-link">Portfolio</a></li>
 <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="contact/index.html" class="menu-link">Contact</a></li>
-</ul></div></nav></div></div> </div>
+</ul></div></nav>
+
+</div>
+
+</div> </div>
 </div>
 </div>
 </div>
